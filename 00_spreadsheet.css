@@ -125,8 +125,8 @@
 }
 
 .lm-scrllgngn__block_current .draw-circle {
-    stroke-dasharray: 280;
-    stroke-dashoffset: 100;
+    stroke-dasharray: 230;
+    stroke-dashoffset: 230;
     animation: draw 1.5s ease-in-out forwards;
 }
 
@@ -136,8 +136,8 @@
 /* Le graphique 02-04-00 */
 
 .lm-scrllgngn__block_current .draw-line {
-    stroke-dasharray: 950;
-    stroke-dashoffset: 600;
+    stroke-dasharray: 960;
+    stroke-dashoffset: 960;
     animation: draw 1.5s ease-in-out forwards;
 }
 
