@@ -19,27 +19,21 @@
 */
 
 /* <-----LES ANIMS-----> */
-/* les anims des text-cards */
+/* Anim du premier txt d'intro */
 
 @keyframes scr-fadein {
     from {
-        opacity: 0.2;
+        padding-top: 100px;
     }
 
     to {
-        opacity: 1;
+        padding-top: 0x;
     }
 }
 
-/* 
-.to-fade-in {
-  opacity: 0;
+.src-anim-intro {
+    animation: scr-fadein 1s ease-in-out forwards;
 }
-
-.to-fade-in.fade-in {
- animation: scr-fadein 1s ease-in-out forwards;
-}
-*/
 
 /* les anims des infographies de Romain */
 
@@ -262,16 +256,6 @@
     max-width: 620px;
 }
 
-.scr-graph-title {
-    font-family: var(--ff-marr-sans);
-    font-weight: 400;
-    text-align: center;
-    line-height: 1;
-    font-size: 22px;
-    color: white;
-    max-width: 680px;
-}
-
 .scr-label {
     font-family: var(--ff-marr-sans);
     color: white;
@@ -398,6 +382,7 @@
 .scr-infog {
     width: 100%;
     height: 100%;
+    max-width: 1100px;
 }
 
 .scr-infog>* {
@@ -424,6 +409,7 @@
     align-items: center;
     height: 100vh;
     padding: 0 50px 0 50px;
+    max-width: 1100px;
 }
 
 /* le mobile */
