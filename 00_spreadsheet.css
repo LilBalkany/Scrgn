@@ -228,6 +228,7 @@
         color: white;
         max-width: 760px;
         text-align: center;
+        text-shadow: 0px 3px 30px rgba(0, 0, 0, 1);
     }
 
     .scr-chapo {
@@ -248,6 +249,7 @@
         text-align: left;
         max-width: 640px;
         width: 100%;
+        text-shadow: 0px 3px 10px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1);
     }
 
     .scr-chapter-title {
@@ -268,6 +270,7 @@
         text-align: center;
         line-height: 1.4;
         max-width: 620px;
+        text-shadow: 0px 3px 10px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1);
     }
 
     .scr-label {
@@ -329,6 +332,7 @@
         letter-spacing: -0.02em;
         color: rgba(255, 255, 255, 0.96);
         background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 0px 26px 0px rgba(65, 189, 238, 0.05), 0 1px 3px 0px rgba(65, 189, 238, 0.03);
     }
 
     /* Light-Mode */
@@ -364,9 +368,9 @@
         object-fit: contain;
         border-radius: 100%;
         overflow: hidden;
-        filter: 
-        drop-shadow(0px 0px 100px rgba(69, 162, 215, 0.55))
-        drop-shadow(0px 0px 30px rgba(114, 180, 221, 0.75));
+        /*filter: 
+        drop-shadow(0px 0px 100px rgba(69, 162, 215, 0.35))
+        drop-shadow(0px 0px 30px rgba(114, 180, 221, 0.25));*/
     }
 
     .scr-noise {
@@ -383,7 +387,19 @@
         width: 100vw;
         height: 100vh;
         background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/sky.jpg");
-        opacity: 0.6;
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+    }
+
+    .scr-infog-sky {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/sky-infog.jpg");
+        background-position: center;
+        background-size: cover;
+        mix-blend-mode: multiply;
+        opacity: 0.4;
     }
 
     .scr-noise-light {
@@ -403,7 +419,7 @@
     }
 
     .scr-overlay-dark-medium {
-        background-color: rgba(8, 9, 15, 0.70);
+        background-color: rgba(8, 9, 15, 0.45);
         height: 100vh;
         width: 100vw;
     }
