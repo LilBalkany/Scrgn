@@ -162,13 +162,6 @@
         animation: draw-dash 1.5s ease-in-out forwards;
     }
 
-    /* Le graphique molécules */
-
-    .lm-climat-scale_bars-container {
-      height: 100vh;
-      align-items: center;
-    }
-
     /* L'anim des chapitres */
 
     @keyframes scr-scalein-chapter {
