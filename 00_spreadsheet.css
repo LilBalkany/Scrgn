@@ -162,6 +162,19 @@
         animation: draw-dash 1.5s ease-in-out forwards;
     }
 
+     /* L'anim des chapitres */
+
+    @keyframes scr-scalein-chapter {
+        to {
+            transform: scale(1.6) ;
+        }
+    }
+
+    @keyframes scr-scalein-chapter-circle {
+        to {
+            transform: scale(1.07) ;
+        }
+    }
 
     /* <-----Fin des anims-----> */
 
@@ -247,7 +260,7 @@
         font-size: 22px;
         line-height: 1.5;
         text-align: left;
-        max-width: 640px;
+        max-width: 600px;
         width: 100%;
         text-shadow: 0px 3px 10px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1);
     }
@@ -259,6 +272,16 @@
         line-height: 1;
         font-size: 66px;
         color: white;
+        max-width: 680px;
+    }
+
+    .scr-chapter-title-dark {
+        font-family: var(--ff-marr-sans);
+        font-weight: 400;
+        text-align: center;
+        line-height: 1;
+        font-size: 66px;
+        color: #2A303C;
         max-width: 680px;
     }
 
@@ -283,6 +306,16 @@
         text-align: center;
     }
 
+    .scr-label-dark {
+        font-family: var(--ff-marr-sans);
+        color: #2A303C;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
     .scr-plain-text-dark {
         font-family: var(--ff-the-antiqua-b);
         color: rgba(255, 255, 255, 0.85);
@@ -290,7 +323,7 @@
         font-size: 23px;
         line-height: 1.35;
         letter-spacing: -0.02em;
-        max-width: 740px;
+        max-width: 600px;
     }
 
     .scr-plain-text-dark strong {
@@ -304,7 +337,7 @@
         font-size: 23px;
         line-height: 1.35;
         letter-spacing: -0.02em;
-        max-width: 740px;
+        max-width: 600px;
     }
 
     .scr-plain-text-light strong {
@@ -368,9 +401,6 @@
         object-fit: contain;
         border-radius: 100%;
         overflow: hidden;
-        /*filter: 
-        drop-shadow(0px 0px 100px rgba(69, 162, 215, 0.35))
-        drop-shadow(0px 0px 30px rgba(114, 180, 221, 0.25));*/
     }
 
     .scr-noise {
@@ -379,8 +409,8 @@
         background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/noise.gif");
         background-size: 500px;
         background-repeat: repeat;
-        mix-blend-mode: multiply;
-        opacity: 0.07;
+        mix-blend-mode: overlay;
+        opacity: 0.12;
     }
 
     .scr-intro-sky {
@@ -401,6 +431,37 @@
         mix-blend-mode: multiply;
         opacity: 0.4;
     }
+
+    .scr-chapter-1-background {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-1-background.jpg");
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+        animation: scr-scalein-chapter 3.5s ease-in-out alternate infinite;
+    }
+
+    .scr-chapter-2-background {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-2-background.jpg");
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+        animation: scr-scalein-chapter 3.5s ease-in-out alternate infinite;
+    }
+
+    .scr-chapter-2-background-circle {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-2-background-circle.png");
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+        animation: scr-scalein-chapter-circle 7.5s ease-in-out alternate infinite;
+    }
+
 
     .scr-noise-light {
         width: 100vw;
@@ -425,7 +486,7 @@
     }
 
     .scr-overlay-dark {
-        background-color: rgba(8, 9, 15, 0.92);
+        background-color: rgba(8, 9, 15, 0.70);
         height: 100vh;
         width: 100vw;
     }
