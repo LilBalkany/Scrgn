@@ -1,7 +1,17 @@
 .rechauffement-header {
-    background: linear-gradient(180deg, rgba(8, 9, 15, 0.15) 0%,
-            rgba(8, 9, 15, 0) 100%);
+    position: relative;
     height: 80px;
+}
+
+.rechauffement-header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    box-shadow: 0px 0px 100px 20px rgba(8, 9, 15, 0.15);
+    transition: box-shadow 200ms;
+    width: 100%;
+    z-index: -1;
 }
 
 .rechauffement-header .lm-article-header__nav {
@@ -48,9 +58,11 @@
 /* <-----Le dark mode du menu-----> */
 
 .rechauffement-header.rechauffement-header_dark {
-    background: linear-gradient(180deg, rgba(8, 9, 15, 1) 0%,
-            rgba(8, 9, 15, 0) 100%);
     height: 80px;
+}
+
+.rechauffement-header.rechauffement-header_dark::before {
+    box-shadow: 0px 0px 100px 20px rgba(8, 9, 15, 1);
 }
 
 .rechauffement-header.rechauffement-header_dark .lm-article-header__nav-item {
