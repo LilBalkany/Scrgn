@@ -276,13 +276,7 @@
     }
 
     .scr-chapter-title-dark {
-        font-family: var(--ff-marr-sans);
-        font-weight: 400;
-        text-align: center;
-        line-height: 1;
-        font-size: 66px;
         color: #2A303C;
-        max-width: 680px;
     }
 
     .scr-chapter-intro-dark {
@@ -307,13 +301,7 @@
     }
 
     .scr-label-dark {
-        font-family: var(--ff-marr-sans);
         color: #2A303C;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-transform: uppercase;
-        text-align: center;
     }
 
     .scr-plain-text-dark {
@@ -639,12 +627,7 @@
         }
 
         .scr-chapter-title {
-            font-family: var(--ff-marr-sans);
-            font-weight: 400;
-            text-align: center;
-            line-height: 1;
             font-size: 38px;
-            color: white;
             max-width: 84%;
         }
     }
