@@ -15,13 +15,13 @@
   }
   
   .rechauffement-header .lm-article-header__nav {
-    gap: 6px;
     overflow: initial;
   }
   
   .rechauffement-header .lm-article-header__nav-item {
     cursor: pointer;
     padding: 5px 12px;
+    margin: 0 3px;
     font-family: var(--ff-marr-sans);
     font-weight: 500;
     font-size: 12px;
@@ -95,9 +95,13 @@
       box-shadow: 0 1px 3px 0px rgba(1, 17, 59, 0.08);
     }
 
+    .rechauffement-header .lm-article-header__nav-item:nth-child(2) {
+      margin-left: 6px;
+    }
+
     /* Plus besoin de rectifier l'alignement desktop en mobile */
     .rechauffement-header .lm-article-header__nav-item:nth-child(5) {
-      margin-right: 0;
+      margin-right: 6px;
     }
   
     .rechauffement-header .lm-article-header__nav {
