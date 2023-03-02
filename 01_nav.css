@@ -94,6 +94,11 @@
       letter-spacing: -0.01em;
       box-shadow: 0 1px 3px 0px rgba(1, 17, 59, 0.08);
     }
+
+    /* Plus besoin de rectifier l'alignement desktop en mobile */
+    .rechauffement-header .lm-article-header__nav-item:nth-child(5) {
+      margin-right: 0;
+    }
   
     .rechauffement-header .lm-article-header__nav {
       overflow: scroll;
