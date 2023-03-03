@@ -166,13 +166,13 @@
 
     @keyframes scr-scalein-chapter {
         to {
-            transform: scale(1.6) ;
+            transform: scale(1.6);
         }
     }
 
     @keyframes scr-scalein-chapter-circle {
         to {
-            transform: scale(1.07) ;
+            transform: scale(1.07);
         }
     }
 
@@ -449,6 +449,11 @@
         animation: scr-scalein-chapter-circle 7.5s ease-in-out alternate infinite;
     }
 
+    .scr-chapter-3-background {
+        background-color: #0E101B;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-3-background.jpg");
+    }
+
     .scr-noise-light {
         width: 100vw;
         height: 100vh;
@@ -457,30 +462,6 @@
         background-repeat: repeat;
         mix-blend-mode: multiply;
         opacity: 0.09;
-    }
-
-    .scr-overlay-light {
-        background-color: rgba(255, 253, 237, 0.85);
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .scr-overlay-dark-medium {
-        background-color: rgba(8, 9, 15, 0.45);
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .scr-overlay-dark {
-        background-color: rgba(8, 9, 15, 0.70);
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .scr-overlay-darker {
-        background-color: rgba(8, 9, 15, 0.97);
-        height: 100vh;
-        width: 100vw;
     }
 
     .scr-infog {
@@ -515,6 +496,34 @@
         padding: 0 50px 0 50px;
         max-width: 1100px;
     }
+
+    /* les overlays */
+
+    .scr-background-overlay-light {
+        height: 100vh;
+        width: 100vw;
+        background-color: #FFFDED;
+        opacity: 0.85;
+    }
+
+    .scr-background-overlay-dark {
+        height: 100vh;
+        width: 100vw;
+        background-color: #0E101B;
+        opacity: 0.85;
+        transition: opacity 600ms;
+    }
+
+    .lm-scrllgngn_page-01_03 .scr-background-overlay-dark,
+    .lm-scrllgngn_page-01_04 .scr-background-overlay-dark {
+        opacity: 0.75;
+    }
+
+    .lm-scrllgngn_page-01_05 .scr-background-overlay-dark,
+    .lm-scrllgngn_page-15 .scr-background-overlay-dark {
+        opacity: 0.5;
+    }
+    
 
     /* le mobile */
 
