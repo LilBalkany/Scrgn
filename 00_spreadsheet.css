@@ -424,36 +424,29 @@
         opacity: 0.4;
     }
 
-    .scr-chapter-1-background {
+    .scr-chapter-background {
         width: 100vw;
         height: 100vh;
-        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-1-background.jpg");
         background-position: center;
         background-size: cover;
         opacity: 1;
         animation: scr-scalein-chapter 3.5s ease-in-out alternate infinite;
+    }
+
+    .scr-chapter-1-background {
+        background-color: #fffded;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-1-background.jpg");
     }
 
     .scr-chapter-2-background {
-        width: 100vw;
-        height: 100vh;
+        background-color: #0E101B;
         background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-2-background.jpg");
-        background-position: center;
-        background-size: cover;
-        opacity: 1;
-        animation: scr-scalein-chapter 3.5s ease-in-out alternate infinite;
     }
 
     .scr-chapter-2-background-circle {
-        width: 100vw;
-        height: 100vh;
         background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-2-background-circle.png");
-        background-position: center;
-        background-size: cover;
-        opacity: 1;
         animation: scr-scalein-chapter-circle 7.5s ease-in-out alternate infinite;
     }
-
 
     .scr-noise-light {
         width: 100vw;
@@ -571,6 +564,12 @@
             font-size: 17px;
             line-height: 1.4;
             max-width: 84%;
+        }
+
+        .scr-chapter-background {
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 180%;
         }
 
         .scr-label {
