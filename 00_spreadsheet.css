@@ -208,7 +208,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        transition: opacity 600ms;
+    }
+
+    .lm-scrllgngn__page_above .scr-wrapper-chapter {
+        opacity: 0;
     }
 
     .scr-wrapper-chapter-intro {
