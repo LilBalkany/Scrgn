@@ -594,6 +594,10 @@
             background-size: 180%;
         }
 
+        .scr-chapter-3-background {
+          background-repeat: repeat-y;
+        }
+
         .scr-label {
             font-size: 12px;
             line-height: 20px;
