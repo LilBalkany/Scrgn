@@ -339,9 +339,10 @@
 
     .scr-focus-text {
         color: var(--color, white);
+        font-weight: 500;
         background: var(--bg-color, black);
         padding: 0 5px 0 5px;
-        border-radius: 1px;
+        border-radius: 3px;
     }
 
     .scr-credits {
@@ -366,7 +367,7 @@
         font-size: 20px;
         line-height: 1.4;
         letter-spacing: -0.02em;
-        color: rgba(255, 255, 255, 0.96);
+        color: rgba(255, 255, 255, 0.85);
         background-color: rgba(0, 0, 0, 0.7);
         box-shadow: 0px 0px 26px 0px rgba(65, 189, 238, 0.05), 0 1px 3px 0px rgba(65, 189, 238, 0.03);
     }
@@ -530,7 +531,8 @@
     }
 
     .lm-scrllgngn_page-01_05 .scr-background-overlay-dark,
-    .lm-scrllgngn_page-15 .scr-background-overlay-dark {
+    .lm-scrllgngn_page-15 .scr-background-overlay-dark,
+    .lm-scrllgngn_page-15-1 .scr-background-overlay-dark {
         opacity: 0.5;
     }
     
