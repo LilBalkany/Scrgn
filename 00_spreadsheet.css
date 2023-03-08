@@ -508,6 +508,11 @@
         max-width: 1100px;
     }
 
+    .lm-scrllgngn__block_sticky[data-id="stop-motion-globe"] {
+      display: flex;
+      align-items: center;
+    }
+
     /* les overlays */
 
     .scr-background-overlay-light {
@@ -596,6 +601,7 @@
 
         .scr-chapter-3-background {
           background-repeat: repeat-y;
+          background-size: 160%;
         }
 
         .scr-label {
