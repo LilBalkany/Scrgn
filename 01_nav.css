@@ -1,3 +1,7 @@
+.lm-scrllgngn .lm-logo .lm-svg {
+  width: unset !important;
+}
+
 .rechauffement-header {
     position: relative;
     height: 80px;
@@ -109,6 +113,7 @@
     .rechauffement-header .lm-article-header__nav {
       overflow: scroll;
       border-left: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 0 8px;
     }
   
     .rechauffement-header.rechauffement-header_dark .lm-article-header__nav {
