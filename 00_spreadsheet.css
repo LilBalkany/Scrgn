@@ -18,6 +18,29 @@
 }
 */
 
+    /* [MAX] */
+    .scr-wrapper {
+      pointer-events: none;
+    }
+    :where(.scr-wrapper > *) {
+      pointer-events: auto;
+    }
+    .scr-noise,
+    .scr-noise-light,
+    .scr-background-overlay-dark,
+    .scr-background-overlay-light {
+      pointer-events: none;
+    }
+
+    :where(
+      .scr-noise > *,
+      .scr-noise-light > *,
+      .scr-background-overlay-dark > *,
+      .scr-background-overlay-light > *
+    ) {
+      pointer-events: auto;
+    }
+
     /* <-----LES ANIMS-----> */
     /* Anim du premier txt d'intro */
 
