@@ -20,25 +20,25 @@
 
     /* [MAX] */
     .scr-wrapper {
-      pointer-events: none;
+        pointer-events: none;
     }
+
     :where(.scr-wrapper > *) {
-      pointer-events: auto;
+        pointer-events: auto;
     }
+
     .scr-noise,
     .scr-noise-light,
     .scr-background-overlay-dark,
     .scr-background-overlay-light {
-      pointer-events: none;
+        pointer-events: none;
     }
 
-    :where(
-      .scr-noise > *,
-      .scr-noise-light > *,
-      .scr-background-overlay-dark > *,
-      .scr-background-overlay-light > *
-    ) {
-      pointer-events: auto;
+    :where(.scr-noise > *,
+        .scr-noise-light > *,
+        .scr-background-overlay-dark > *,
+        .scr-background-overlay-light > *) {
+        pointer-events: auto;
     }
 
     /* <-----LES ANIMS-----> */
@@ -413,6 +413,10 @@
 
     /* les objets d'arrière-plan */
 
+    [data-id="stop-motion-globe"] canvas {
+        border-radius: 100%;
+    }
+
     .scr-background {
         display: flex;
         flex-direction: column;
@@ -431,13 +435,24 @@
     }
 
     .scr-noise {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
-        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/noise.gif");
-        background-size: 500px;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/noise-4.gif");
+        background-size: 150px;
         background-repeat: repeat;
         mix-blend-mode: overlay;
-        opacity: 0.12;
+        opacity: 0.08;
+    }
+
+    .scr-noise-light {
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/noise-4.gif");
+        background-size: 150px;
+        background-repeat: repeat;
+        mix-blend-mode: multiply;
+        filter: invert(1);
+        opacity: 0.065;
     }
 
     .scr-intro-sky {
@@ -488,16 +503,6 @@
         background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/chapter-3-background.jpg");
     }
 
-    .scr-noise-light {
-        width: 100vw;
-        height: 100vh;
-        background-image: url("https://assets-decodeurs.lemonde.fr/redacweb/Scollgngn/noise.gif");
-        background-size: 500px;
-        background-repeat: repeat;
-        mix-blend-mode: multiply;
-        opacity: 0.09;
-    }
-
     .scr-infog {
         width: 100%;
         height: 100%;
@@ -532,8 +537,8 @@
     }
 
     .lm-scrllgngn__block_sticky[data-id="stop-motion-globe"] {
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
     }
 
     /* les overlays */
@@ -563,7 +568,7 @@
     .lm-scrllgngn_page-15-1 .scr-background-overlay-dark {
         opacity: 0.5;
     }
-    
+
 
     /* le mobile */
 
@@ -623,8 +628,8 @@
         }
 
         .scr-chapter-3-background {
-          background-repeat: repeat-y;
-          background-size: 160%;
+            background-repeat: repeat-y;
+            background-size: 160%;
         }
 
         .scr-label {
@@ -672,6 +677,16 @@
         .scr-infog>* {
             width: 115vmin;
             height: 115vmin;
+        }
+
+        .scr-noise {
+            background-size: 105px;
+            opacity: 0.080;
+        }
+
+        .scr-noise-light {
+            background-size: 105px;
+            opacity: 0.065;
         }
     }
 
