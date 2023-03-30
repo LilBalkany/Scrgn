@@ -413,10 +413,6 @@
 
     /* les objets d'arrière-plan */
 
-    [data-id="stop-motion-globe"] canvas {
-        border-radius: 100%;
-    }
-
     .scr-background {
         display: flex;
         flex-direction: column;
@@ -536,11 +532,16 @@
         max-width: 1100px;
     }
 
-    .lm-scrllgngn__block_sticky[data-id="stop-motion-globe"] {
-        display: flex;
-        align-items: center;
+    .lm-scrllgngn__block_sticky[data-id="stop-motion-globe"] > div {
+      display: grid;
+      align-items: center;
+      justify-content: center;
     }
 
+    .lm-scrllgngn__block_sticky[data-id="stop-motion-globe"] canvas {
+      border-radius: 100%;
+    }
+  
     /* les overlays */
 
     .scr-background-overlay-light {
