@@ -551,6 +551,10 @@
       text-align: center;
     }
   
+    .lm-climat__projections_label {
+      line-height: 140%;
+    }
+    
     /* les overlays */
 
     .scr-background-overlay-light {
