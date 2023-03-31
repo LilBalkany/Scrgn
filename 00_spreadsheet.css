@@ -541,6 +541,15 @@
     .lm-scrllgngn__block_sticky[data-id="stop-motion-globe"] canvas {
       border-radius: 100%;
     }
+
+    .lm-climat__projections-container {
+      margin: 0 auto;
+    }
+    
+    .lm-climat__projections {
+      max-width: 375px;
+      text-align: center;
+    }
   
     /* les overlays */
 
