@@ -71,6 +71,25 @@
         transition: opacity 600ms var(--delay);
     }
 
+    /* 01-04 anim des barres */
+
+    .lm-scrllgngn__block_current .scr-bar-graph-anim {
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transform-box: fill-box;
+      animation: scr-bar-appear 600ms ease-in-out forwards;
+    }
+    
+    .lm-scrllgngn__block_current .scr-bar-graph-anim.scr-bar-graph-anim--top-down {
+      transform-origin: top;
+    }
+    
+    @keyframes scr-bar-appear {
+      to {
+        transform: scaleY(1);
+      }
+    }
+
     /* les anims des infographies de Romain */
 
 
