@@ -343,8 +343,10 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
+        letter-spacing: 0.03em;
         text-transform: uppercase;
         text-align: center;
+
     }
 
     .scr-label-dark {
@@ -380,11 +382,10 @@
     }
 
     .scr-focus-text {
-        color: var(--color, white);
-        font-weight: 500;
-        background: var(--bg-color, black);
-        padding: 0 5px 0 5px;
-        border-radius: 3px;
+        text-decoration: underline;
+        text-decoration-thickness: 0.15em;
+        text-underline-offset: 0.2em;
+        text-decoration-color: var(--color, black);
     }
 
     .scr-credits {
@@ -412,6 +413,7 @@
         color: rgba(255, 255, 255, 0.85);
         background-color: rgba(0, 0, 0, 0.7);
         box-shadow: 0px 0px 26px 0px rgba(65, 189, 238, 0.05), 0 1px 3px 0px rgba(65, 189, 238, 0.03);
+        backdrop-filter: blur(35px);
     }
 
     /* Light-Mode */
@@ -426,8 +428,9 @@
         line-height: 1.4;
         letter-spacing: -0.02em;
         color: #2A303C;
-        background-color: rgba(255, 255, 255, 0.96);
+        background-color: rgba(255, 255, 255, 0.82);
         box-shadow: 0px 12px 26px 0px rgba(1, 17, 59, 0.09), 0 1px 3px 0px rgba(1, 17, 59, 0.08);
+        backdrop-filter: blur(13px);
     }
 
     /* les objets d'arrière-plan */
@@ -580,6 +583,7 @@
         height: 100vh;
         width: 100vw;
         background-color: #FFFDED;
+        backdrop-filter: blur(30px);
         opacity: 0.85;
     }
 
