@@ -537,6 +537,10 @@
         object-fit: contain;
     }
 
+    .scr-infog.scr-infog_romain>* {
+        width: 100%;
+    }
+
     .scr-earth-wrapper>*,
     .scr-arrow-wrapper>* {
         width: 100%;
@@ -608,6 +612,13 @@
 
 
     /* le mobile */
+
+    @media screen and (max-width: 1024px) {
+
+    .scr-wrapper-card-left {
+            width: unset;
+        }
+    }
 
     @media screen and (max-width: 800px) {
 
