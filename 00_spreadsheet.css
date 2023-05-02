@@ -81,7 +81,7 @@
 
     .scr-bar-graph-anim { 
       transform: scaleY(0);
-      transition: transform 600ms;
+      transition: transform 600ms, fill 600ms;
       transform-origin: bottom;
       transform-box: fill-box;
     }
