@@ -685,7 +685,11 @@
         opacity: 0.97;
     }
 
-    .lm-scrllgngn_page-16 .scr-background-overlay-dark {
+    .lm-scrllgngn_page-16 .scr-background-overlay-dark,
+    .lm-scrllgngn_page-17 .scr-background-overlay-dark,
+    .lm-scrllgngn_page-18 .scr-background-overlay-dark,
+    .lm-scrllgngn_page-19 .scr-background-overlay-dark,
+    .lm-scrllgngn_page-20 .scr-background-overlay-dark {
         opacity: 0;
     }
 
