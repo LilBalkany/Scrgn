@@ -73,21 +73,42 @@
 
     /* 01-04 anim des barres */
 
-    .lm-scrllgngn__block_current .scr-bar-graph-anim {
+    .scr-bar-graph:not(.scr-bar-graph-axis) text, 
+    .scr-bar-graph:not(.scr-bar-graph-axis) line {
+      opacity: 1;
+      transition: opacity 600ms;
+    }
+
+    .scr-bar-graph-anim { 
       transform: scaleY(0);
+      transition: transform 600ms;
       transform-origin: bottom;
       transform-box: fill-box;
-      animation: scr-bar-appear 600ms ease-in-out forwards;
     }
-    
-    .lm-scrllgngn__block_current .scr-bar-graph-anim.scr-bar-graph-anim--top-down {
+
+    .scr-bar-graph-anim.scr-bar-graph-anim--top-down {
       transform-origin: top;
     }
-    
-    @keyframes scr-bar-appear {
-      to {
-        transform: scaleY(1);
-      }
+
+    .lm-scrllgngn__block_current .scr-bar-graph-anim {
+      transform: scaleY(1);
+    }
+  
+    .lm-scrllgngn_page-13-1-1 .scr-bar-graph-layer-3 .scr-bar-graph-anim {
+      transform: scaleY(0);
+    }
+
+    .lm-scrllgngn_page-13-1-1 .scr-bar-graph-layer-2 .scr-bar-graph-anim,
+    .lm-scrllgngn_page-13-1-2 .scr-bar-graph-layer-2 .scr-bar-graph-anim {
+      transform: scaleY(0.72);
+      fill: #F47F7F;
+    }
+
+    .lm-scrllgngn_page-13-1-1 .scr-bar-graph-layer-2 > :not(path),
+    .lm-scrllgngn_page-13-1-1 .scr-bar-graph-layer-3 > :not(path),
+    .lm-scrllgngn_page-13-1-2 .scr-bar-graph-layer-2 > :not(path),
+    .lm-scrllgngn_page-13-1-2 .scr-bar-graph-layer-3 > :not(path) {
+      opacity: 0;
     }
 
     /* les anims des infographies de Romain */
