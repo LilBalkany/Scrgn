@@ -386,7 +386,7 @@
         max-width: 680px;
     }
 
-    .scr-chapter-title-dark {
+    .scr-chapter-title.scr-chapter-title_dark {
         color: #2A303C;
     }
 
@@ -410,28 +410,13 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         text-align: center;
-
     }
 
-    .scr-label-dark {
+    .scr-label.scr-label_dark {
         color: #2A303C;
     }
 
-    .scr-plain-text-dark {
-        font-family: var(--ff-the-antiqua-b);
-        color: rgba(255, 255, 255, 0.85);
-        font-weight: 500;
-        font-size: 23px;
-        line-height: 1.35;
-        letter-spacing: -0.02em;
-        max-width: 600px;
-    }
-
-    .scr-plain-text-dark strong {
-        color: #d95e4e;
-    }
-
-    .scr-plain-text-light {
+    .scr-plain-text {
         font-family: var(--ff-the-antiqua-b);
         color: rgba(42, 48, 60, 0.85);
         font-weight: 500;
@@ -441,8 +426,16 @@
         max-width: 600px;
     }
 
-    .scr-plain-text-light strong {
+    .scr-plain-text.scr-plain-text_dark {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .scr-plain-text strong {
         color: #CC1800;
+    }
+
+    .scr-plain-text.scr-plain-text_dark strong {
+        color: #d95e4e;
     }
 
     .scr-focus-text {
@@ -782,14 +775,14 @@
             line-height: 1.4;
         }
 
-        .scr-plain-text-dark {
+        .scr-plain-text.scr-plain-text_dark {
             font-size: 17px;
             line-height: 1.45;
             letter-spacing: -0.01em;
             max-width: 84%;
         }
 
-        .scr-plain-text-light {
+        .scr-plain-text {
             font-size: 17px;
             line-height: 1.45;
             letter-spacing: -0.01em;
