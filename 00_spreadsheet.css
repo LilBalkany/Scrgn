@@ -631,7 +631,7 @@
     }
 
    .scr-infog_romain>* {
-        width: 100%;
+        width: 100% !important;
     }
 
     .scr-earth-wrapper>*,
