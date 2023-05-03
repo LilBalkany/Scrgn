@@ -71,6 +71,40 @@
         transition: opacity 600ms var(--delay);
     }
 
+    /* typo svg */
+    .scr-infog-axis-text {
+      font-family: var(--ff-marr-sans);
+      font-size: 12px;
+      font-weight: 500;
+      fill: #A4A9B4;
+    }
+
+    .scr-infog-axis-text-big {
+      font-size: 16px;
+    }      
+
+    .scr-infog-text {
+      font-family: var(--ff-marr-sans);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .scr-infog-text-big {
+      font-size: 18px;
+    }
+
+    .scr-infog-text-v-big {
+      font-size: 24px;
+    }
+
+    .scr-infog-text-semi-bold {
+      font-weight: 600;
+    }
+
+    .scr-infog-text-bold {
+      font-weight: 700;
+    }
+
     /* 01-04 anim des barres */
 
     .scr-bar-graph:not(.scr-bar-graph-axis) text, 
@@ -246,12 +280,12 @@
     @keyframes scr-fade-diagram-infos {
         from {
         opacity: 0;
-        padding-top: 100px;
+        transform: translateY(100px);
         }
 
         to {
         opacity: 1;
-        padding-top: 0px;
+        transform: translateY(0px);
         }
     }
 
@@ -591,12 +625,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100vmin;
-        height: 100vmin;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
     }
 
-    .scr-infog.scr-infog_romain>* {
+   .scr-infog_romain>* {
         width: 100%;
     }
 
