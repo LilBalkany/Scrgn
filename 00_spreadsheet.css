@@ -435,6 +435,16 @@
         text-shadow: 0px 3px 10px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1);
     }
 
+    .scr-conclusion {
+        font-family: var(--ff-the-antiqua-b);
+        color: #2A303C;
+        font-weight: 500;
+        font-size: 26px;
+        text-align: center;
+        line-height: 1.4;
+        max-width: 620px;
+    }
+
     .scr-label {
         font-family: var(--ff-marr-sans);
         color: white;
@@ -485,7 +495,7 @@
         text-align: left;
         font-size: 17px;
         line-height: 1.4;
-        color: white;
+        color: #2A303C;
         max-width: 680px;
     }
 
