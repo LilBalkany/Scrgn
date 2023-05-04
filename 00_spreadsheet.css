@@ -630,10 +630,6 @@
         object-fit: contain;
     }
 
-   .scr-infog_romain>* {
-        width: 100% !important;
-    }
-
     .scr-earth-wrapper>*,
     .scr-arrow-wrapper>* {
         width: 100%;
