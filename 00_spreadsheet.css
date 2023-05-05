@@ -874,6 +874,62 @@
         }
     }
 
+    /* typos svg */
+
+    @media screen and (max-width: 600px) {
+      .scr-infog-axis-text {
+        font-size: 16px;
+      }
+
+      .scr-infog-axis-text-big {
+        font-size: 22px;
+      }
+
+      .scr-infog-text {
+        font-size: 22px;
+      }
+
+      .scr-infog-text-big {
+        font-size: 24px;
+      }
+
+      .scr-infog-text-v-big {
+        font-size: 32px;
+      }
+
+      .scr-infog_translate-10 {
+        transform: translateX(10px);
+      }
+
+      .scr-infog_translate-60 {
+        transform: translateX(60px);
+      }
+
+      .scr-infog_translate-min15 {
+        transform: translateX(-15px);
+      }
+
+      .scr-infog_translate-min60 {
+        transform: translateX(-60px);
+      }
+
+      .scr-infog_translate-min150 {
+        transform: translateX(-150px);
+      }
+
+      .scr-infog_translate-diag {
+        transform: translate(252.295px, 755.962px);
+      }
+
+      .scr-infog_translate-curve-1 {
+        transform: translate(-60px, -10px);
+      }
+
+      .scr-infog_translate-curve-2 {
+        transform: translate(-20px, -40px);
+      }
+    }
+
     /* les très petit mobiles */
 
     @media screen and (max-width: 320px) {
