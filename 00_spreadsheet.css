@@ -742,6 +742,10 @@
 
     @media screen and (max-width: 800px) {
 
+        .scr-graph-emissions-origin {
+            left: 46vw;
+        }
+
         .scr-wrapper {
             min-height: 110vh;
         }
