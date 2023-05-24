@@ -499,6 +499,10 @@
         max-width: 680px;
     }
 
+    .scr-credits strong {
+        font-weight: 600;
+    }
+
     /* les text-cards */
     /* Dark-Mode */
 
@@ -850,6 +854,7 @@
         .scr-credits {
             font-size: 14px;
             line-height: 1.2;
+            padding: 0 24px;
         }
 
         .scr-wrapper-card-left {
