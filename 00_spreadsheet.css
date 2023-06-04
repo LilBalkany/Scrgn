@@ -897,6 +897,10 @@
 
     /* typos svg */
 
+    .scr-infog-text-title-origin {
+        font-size: 18px !important;
+    }
+
     @media screen and (max-width: 600px) {
       .scr-infog-axis-text {
         font-size: 16px;
@@ -949,7 +953,17 @@
       .scr-infog_translate-curve-2 {
         transform: translate(-20px, -40px);
       }
-    }
+
+      .scr-infog-text-title-origin {
+        font-size: 30px !important;
+        transform: translate(-28vw);
+      }
+
+      .scr-infog_title_graph_decomposition {
+        font-size: 23px;
+        transform: translate(-15vw, -10px);
+      }
+}
 
     /* les très petit mobiles */
 
